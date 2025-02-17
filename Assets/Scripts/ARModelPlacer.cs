@@ -8,6 +8,8 @@ public class ARModelPlacer : MonoBehaviour
     [SerializeField] private GameObject modelPrefab;  // Assign your model prefab in Inspector
     [SerializeField] private Transform arCamera;      // Assign the AR Camera from the scene
     [SerializeField] private LayerMask floorLayer;    // Assign a layer for valid floors
+    [SerializeField] private GameObject buildGUI;
+    [SerializeField] private GameObject buildGUIButton;
 
     private GameObject spawnedModel;
     private bool isPlacing = false;
@@ -29,11 +31,12 @@ public class ARModelPlacer : MonoBehaviour
             if (!isPlacing) // If not already placing, start placement mode
             {
                 StartPlacementMode();
+                buildGUIButton.SetActive(true);
             }
         }
     }
 
-    private void StartPlacementMode()
+    public void StartPlacementMode()
     {
         isPlacing = true;
         spawnedModel = Instantiate(modelPrefab);
@@ -58,6 +61,8 @@ public class ARModelPlacer : MonoBehaviour
         {
             spawnedModel.transform.position = hit.point; // Snap to the detected floor
             isPlacing = false;
+            buildGUI.SetActive(true);
+            buildGUIButton.SetActive(false);
         }
         else
         {

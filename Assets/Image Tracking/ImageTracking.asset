@@ -16,4 +16,24 @@ MonoBehaviour:
   m_GuidHigh: 13569248180526088634
   m_DataStore:
     m_Storage: []
-  m_Images: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4803416335883713360
+      m_GuidHigh: 7078553064652602548
+    m_SerializedTextureGuid:
+      m_GuidLow: 10778494028585090741
+      m_GuidHigh: 17873525455652193787
+    m_Size: {x: 0.1, y: 0.14797688}
+    m_SpecifySize: 1
+    m_Name: Tower
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5049106701689923422
+      m_GuidHigh: 6871028241897323428
+    m_SerializedTextureGuid:
+      m_GuidLow: 7121541552549429444
+      m_GuidHigh: 12918077203205349609
+    m_Size: {x: 0.1341719, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: Fountain
+    m_Texture: {fileID: 0}
