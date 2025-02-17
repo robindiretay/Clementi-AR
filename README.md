@@ -1,4 +1,4 @@
-# Heritage of Clementi README
+# Heritage of Clementi
 
 ## Project Overview
 This Unity project is an AR mobile game designed to relive old monuments of Clementi, specifically the iconic clock tower and fountain, which no longer exist. Using AR, players can "rebuild" these landmarks and take photos with them in real-world settings.
